@@ -39,4 +39,6 @@ config :spark,
     "Ash.Domain": [section_order: [:resources, :policies, :authorization, :domain, :execution]]
   ]
 
+config :test, ash_domains: [Test.MyDomain]
+
 import_config "#{config_env()}.exs"
